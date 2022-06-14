@@ -1,3 +1,6 @@
+"""
+CREAR UN PROGRAMA QUE CONVIERTA MONEDAS DE SOLES A DOLARES
+"""
 
 #ENTRADA 
 monedaOrigen = input("Ingrese moneda Origen:");
