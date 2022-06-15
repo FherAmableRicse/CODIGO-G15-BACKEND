@@ -14,9 +14,13 @@ while(opcion != 3):
     """)
     opcion = int(input("ingrese la opcion que desee:"))
     if(opcion == 1):
-      pass
+      montoOrigen = float(input("ingrese monto en soles :"))
+      montoDestino = montoOrigen / 3.8
+      print("El monto en dolares es " + str(montoDestino))
     elif(opcion == 2):
-      pass
+       montoOrigen = float(input("ingrese monto en dolares :"))
+       montoDestino = montoOrigen * 3.8
+       print("El monto en dolares es " + str(montoDestino))
     elif(opcion == 3):
         print("ADIOS!!!")
     else:
