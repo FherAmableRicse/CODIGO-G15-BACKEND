@@ -1,0 +1,10 @@
+#programa para registrar los tipos de cambios del dolae
+archivosMonedas = open('monedas.csv','a')
+print("inserte nuevos datos de la moneda : ")
+tipo = input("tipo de moneda :")
+compra = input("precio compra :")
+venta = input("precio venta :")
+archivosMonedas.write("\n" + tipo + "," + compra + "," + venta)
+archivosMonedas.close()
+monedasLactura = open('monedas.csv' , 'r')
+print(monedasLactura.read())
