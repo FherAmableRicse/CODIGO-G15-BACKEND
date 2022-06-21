@@ -7,7 +7,7 @@ app.geometry('810x300')
 tree = ttk.Treeview(app)
 tree['columns'] = ('Nombre', 'Email', 'Celular')
 
-tree.column('#0')
+tree.column('#0',width=0,stretch=NO)
 tree.column('Nombre')
 tree.column('Email')
 tree.column('Celular')
