@@ -1,8 +1,16 @@
+
+select * from alumno;
+select * from nota;
+select * from curso;
+
+select nota.*,alumno.*
+from nota inner join alumno on nota.alumno_id = alumno.id;
 select nota.id as id,alumno.nombre as alumno,curso.nombre as curso,nota.nota as nota
 from nota 
 inner join alumno on nota.alumno_id = alumno.id
 inner join curso on nota.curso_id = curso.id
 order by alumno.nombre asc;
+
 --left JOIN
 select a.id,a.nombre,avg(n.nota) as alumno
 from alumno a
@@ -45,3 +53,4 @@ GROUP BY a.nombre,n1.nota,n2.nota,n3.nota,n4.nota,n5.nota,n6.nota;
 select * from alumno
 where nota >
 (select avg(nota) from alumno);
+

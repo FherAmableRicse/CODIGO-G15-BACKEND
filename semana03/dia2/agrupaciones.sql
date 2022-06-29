@@ -1,46 +1,21 @@
---FUNCIONES DE AGRUPACION
-
---contar registros
-
-SELECT COUNT(*) FROM alumno;
-
-SELECT SUM(nota)/ COUNT(*) FROM alumno;
-
-SELECT AVG(nota),MIN(nota), MAX(nota) FROM alumno;
-
-SELECT MIN(pais),MAX(pais),AVG(pais) FROM alumno;
-
-SELECT MAX(id) FROM alumno;
-
+--FUNCIONES DE AGRUPACIÓN
+select count(*) from alumno;
+select sum(nota) / count(*) from alumno;
+select avg(nota),min(nota),max(nota) from alumno;
+select min(pais),max(pais),avg(pais) from alumno;
+select max(id) from alumno;
 --GROUP BY
-
-SELECT
-    pais,
-    COUNT(*) AS cantidad
-FROM alumno
+select pais,count(*) as cantidad from alumno
 GROUP BY pais
-ORDER BY COUNT(*) DESC;
-
---CREAR CONSULTA SQL QUE RETORNE LA NOTA PROMEDIO, MINIMA Y MAXIMA POR PAIS ORDENADO POR PROMEDIO MAS ALTO POR PAIS
-
-SELECT
-    pais,
-    avg(nota) ASC promedio,
-    min(nota) ASC minimo,
-    max(nota) ASC maximo
+order by count(*) desc;
+--CREAR CONSULTA SQL QUE RETORNE LA NOTA PROMEDIO,MINIMA Y MAXIMA POR PAIS ORDANDO POR PROMEDIO MAS ALTO POR PAIS
+select pais,avg(nota) as promedio,min(nota) as minimo,max(nota) as maximo
 FROM alumno
-WHERE nota > 10
+where nota > 10
 GROUP BY pais
-HAVING avg(nota) < 16
-ORDER BY avg(nota) DESC;
-
+HAVING avg(nota) < 15
+order by avg(nota) desc;
 --
-
-SELECT * FROM alumno;
-
-SELECT
-    pais,
-    AVG(nota) as promedio
-FROM alumno
-WHERE nota > 10
-GROUP BY pais;
+select pais,avg(nota) as promedio
+from alumno where nota > 10
+GROUP BY pais
