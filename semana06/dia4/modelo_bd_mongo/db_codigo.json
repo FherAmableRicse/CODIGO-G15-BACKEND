@@ -1,0 +1,32 @@
+
+[{
+    "id" : 1,
+    "nombre":  "fher amable",
+    "email" : "fheramable@gmail.com",
+    "celular": "998912342",
+    "github": "https://github.com/FherAmableRicse"
+}]
+
+[{
+    "id":1,
+    "nombre":"python"
+}]
+
+[
+    {
+        "fecha":"2022-07-21",
+        "alumno":{
+            "id" : 1,
+            "nombre":"fher amable"
+        },
+        "nivel":"basico",
+        "modulo":"backend",
+        "cursos":[
+            {
+                "id":1,
+                "nombre":"python",
+                "nota":10
+            }
+        ]
+    }
+]
