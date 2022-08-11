@@ -4,7 +4,7 @@ const CursoService = require('../services/curso.service');
 const boom = require('@hapi/boom');
 
 
-const validatorHandler = require('../middlewares/validation.handler');
+const validatorHandler = require('../middlewares/validator.handler');
 const {createCursoSchema,updateCursoSchema} = require('../schemas/curso.schema');
 
 function CursoApi(app){
