@@ -1,0 +1,14 @@
+[{
+    "productoNombre": "Python dev 1",
+    "productoPrecio": 100,
+    "productoDescripcion": "Polo python developer modelo1",
+    "productoImagen": "https://res.cloudinary.com/famable/image/upload/v1660618818/imagen_2022-08-15_220053511_eot7m2.png"
+
+},
+
+    {
+    "productoNombre": "Python dev 2",
+    "productoPrecio": 200,
+    "productoDescripcion": "Polo python developer modelo2",
+    "productoImagen": "https://res.cloudinary.com/famable/image/upload/v1660618818/imagen_2022-08-15_220053511_eot7m2.png"
+    }]
